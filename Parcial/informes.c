@@ -207,29 +207,62 @@ int orquestas_CincoMusicos(Orquesta arrayOrquestas[], int sizeOrquesta,Musico ar
     int j;
     int contador=0;
 
-    for(i=0;i<sizeMusico-1;i++)
+    if(arrayOrquestas!=NULL && sizeOrquesta>=0)
     {
-        if(arrayMusicos[i].isEmpty==0)
+        for(i=0;i<sizeOrquesta;i++)
         {
-            for(j=i+1;j<sizeMusico;j++)
+            if(arrayOrquestas[i].isEmpty==0)
             {
-                if(arrayMusicos[j].isEmpty==0)
+                if(arrayMusicos!=NULL && sizeMusico>=0)
                 {
-                    if(arrayMusicos[i].idOrquesta== arrayMusicos[j].idOrquesta)
+                    for(j=0;j<sizeMusico;j++)
                     {
-                        contador++;
-                        if(contador>=5)
+                        if(arrayMusicos[j].isEmpty==0)
                         {
-                            printf("\nID: %d\nNombre: %s\nTipo: %d\nLugar: %s\n",arrayOrquestas[i].idOrquesta,arrayOrquestas[i].varString,
-                                   arrayOrquestas[i].tipoOrquesta, arrayOrquestas[i].varLongString);
-                                   retorno=0;
+                            if(arrayOrquestas[i].idOrquesta==arrayMusicos[j].idOrquesta)
+                            {
+                                contador++;
+                                if(contador>=2)
+                                {
+                                    printf("\nID: %d\nNombre: %s\nTipo: %d\nLugar: %s\nContador: %d\n",
+                                           arrayMusicos[j].idOrquesta,arrayOrquestas[i].varString,
+                                           arrayOrquestas[i].tipoOrquesta, arrayOrquestas[i].varLongString, contador);
+                                           retorno=0;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+   /*if(arrayMusicos!=NULL && sizeMusico>=0)
+   {
+        for(i=0;i<sizeMusico-1;i++)
+        {
+            if(arrayMusicos[i].isEmpty==0 )
+            {
+                for(j=i+1;j<sizeMusico-1;j++)
+                {
+                    if(arrayMusicos[j].isEmpty==0)
+                    {
+                        if(arrayMusicos[i].idOrquesta== arrayMusicos[j].idOrquesta)
+                        {
+                            contador++;
+                            if(contador>=5)
+                            {
+                                printf("\nID: %d\nNombre: %s\nTipo: %d\nLugar: %s\nContador: %d\n",arrayOrquestas[i].idOrquesta,arrayOrquestas[i].varString,
+                                       arrayOrquestas[i].tipoOrquesta, arrayOrquestas[i].varLongString, contador);
+                                       retorno=0;
+                            }
                         }
                     }
                 }
             }
         }
-    }
-
+    }*/
 return retorno;
     }
 

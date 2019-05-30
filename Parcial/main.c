@@ -146,19 +146,19 @@ int main()
 
             case 5:
                 system("cls");
-                utn_getChar("\nA) Musicos de mas 30 años\nB) Informar orquestas por musicos\nC) Listar orquestas por lugar\nD) Listar por orquesta\nE) Imprimir cuerdas\nF) Orquestas con mas de 5 musicos\nG) Orquestas con mas musicos\nH) Imprimir promedio\nS)Menu anterior\n",
+                utn_getChar("\nA) Orquestas con mas de 5 musicos\nB) Musicos de mas 30 anios\nC) Listar orquestas por lugar\nD) Orquesta completa\nE) Listar musicos por orquesta\nF) Orquestas con mas musicos \nG) Listar musicos de cuerda\nH) Imprimir promedio\nS)Menu anterior\n",
                             "*Incorrecto*",'A','Z',3,&submenu);
                 switch(toupper(submenu))
                 {
                     case 'A':
                     system("cls");
-                        musicos_MAStreinta(arrayMusico,QTY_TIPO,arrayOrquesta,QTY_TIPO,arrayInstrumento,QTY_TIPO);
+                       orquestas_CincoMusicos(arrayOrquesta,QTY_TIPO,arrayMusico,QTY_TIPO);
                     system("pause");
                     system("cls");
                     break;
                     case 'B':
                     system("cls");
-//                        informar_OrquestaXmusicos(arrayMusico,QTY_TIPO,arrayOrquesta,QTY_TIPO,arrayInstrumento,QTY_TIPO);
+                        musicos_MAStreinta(arrayMusico,QTY_TIPO,arrayOrquesta,QTY_TIPO,arrayInstrumento,QTY_TIPO);
                     system("pause");
                     system("cls");
                     break;
@@ -170,25 +170,26 @@ int main()
                     break;
                     case 'D':
                     system("cls");
-                        listarXorquesta(arrayMusico,QTY_TIPO,arrayOrquesta,QTY_TIPO,arrayInstrumento,QTY_TIPO);
+                        orquestas_CincoMusicos(arrayOrquesta,QTY_TIPO,arrayMusico,QTY_TIPO);
                     system("pause");
                     system("cls");
                     break;
                     case 'E':
                     system("cls");
-                        imprimirCuerdas(arrayInstrumento,QTY_TIPO,arrayMusico,QTY_TIPO);
+                        listarXorquesta(arrayMusico,QTY_TIPO,arrayOrquesta,QTY_TIPO,arrayInstrumento,QTY_TIPO);
+
                     system("pause");
                     system("cls");
                     break;
                     case 'F':
                     system("cls");
-                        orquestas_CincoMusicos(arrayMusico,QTY_TIPO,arrayMusico,QTY_TIPO);
+                        orquesta_conMasMusicos(arrayOrquesta,QTY_TIPO,arrayMusico,QTY_TIPO);
                     system("pause");
                     system("cls");
                     break;
                     case 'G':
                     system("cls");
-                        orquesta_conMasMusicos(arrayInstrumento,QTY_TIPO,arrayMusico,QTY_TIPO);
+                        imprimirCuerdas(arrayInstrumento,QTY_TIPO,arrayMusico,QTY_TIPO);
                     system("pause");
                     system("cls");
                     break;
@@ -198,7 +199,7 @@ int main()
                     system("pause");
                     system("cls");
                     break;
-                    //Informes_listarPorCriterio(arrayMusico,arrayOrquesta,QTY_TIPO,QTY_TIPO,&contadorIdMusico);
+
                     case 'S':
                             break;
                     default:

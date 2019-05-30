@@ -49,7 +49,7 @@
 	"utn.h"
 	"orquesta.h"
 
-1559186872 source:c:\users\marcos\desktop\parcial 3.0\parcial final\parcial\instrumento.c
+1559249013 source:c:\users\marcos\desktop\parcial 3.0\parcial final\parcial\instrumento.c
 	<string.h>
 	<stdio.h>
 	<stdlib.h>
@@ -61,7 +61,7 @@
 
 1559175371 c:\users\marcos\desktop\parcial 3.0\parcial final\parcial\instrumento.h
 
-1559188699 source:c:\users\marcos\desktop\parcial 3.0\parcial final\parcial\main.c
+1559253433 source:c:\users\marcos\desktop\parcial 3.0\parcial final\parcial\main.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -78,7 +78,7 @@
 	"orquesta.h"
 	"instrumento.h"
 
-1559248653 source:c:\users\marcos\desktop\parcial 3.0\parcial final\parcial\musico.c
+1559255060 source:c:\users\marcos\desktop\parcial 3.0\parcial final\parcial\musico.c
 	<string.h>
 	<stdio.h>
 	<stdlib.h>
@@ -94,7 +94,7 @@
 	<string.h>
 	"utn.h"
 
-1559248303 source:c:\users\marcos\desktop\parcial 3.0\parcial final\parcial\informes.c
+1559254463 source:c:\users\marcos\desktop\parcial 3.0\parcial final\parcial\informes.c
 	<string.h>
 	<stdio.h>
 	<stdlib.h>

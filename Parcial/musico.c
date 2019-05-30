@@ -469,7 +469,7 @@ void harcodearMusicos(Musico array[],int size, int* contadorID)
     char apellidos[][20]= {"Amus1","Amus2","Amus3","Amus4","Amus5","Amus6"};
     char nombres[][20]={"Mus1","Mus2","Mus3","Mus4","Mus5","Mus6"};
     int edad[]={30,20,25,27,22,35};
-     int idOrq[]={1,2,4,4,1,3};  //Parcial
+    int idOrq[]={1,2,4,4,1,3};  //Parcial
     //int idOrq[]={3,3,3,2,3,3};  //PRUEBA
     int idIns[]={2,4,2,1,3,4};      //Parcial
     //int idIns[]={2,1,2,1,3,1}; //Prueba
